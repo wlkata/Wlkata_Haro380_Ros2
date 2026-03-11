@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="wlkata_haro380_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0025782 -0.00097364 0.018547"
+        rpy="0 0 0" />
+      <mass
+        value="0.64687" />
+      <inertia
+        ixx="0.00045823"
+        ixy="2.0774E-08"
+        ixz="5.7263E-06"
+        iyy="0.00042235"
+        iyz="1.2147E-06"
+        izz="0.00070695" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.013934 0.0042765 -0.018206"
+        rpy="0 0 0" />
+      <mass
+        value="2.3532" />
+      <inertia
+        ixx="0.00085392"
+        ixy="1.1941E-06"
+        ixz="-4.1396E-05"
+        iyy="0.0012482"
+        iyz="2.3687E-07"
+        izz="0.0015523" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1046"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.443"
+      upper="3.316"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.066111 -0.00022303 -0.053301"
+        rpy="0 0 0" />
+      <mass
+        value="0.70509" />
+      <inertia
+        ixx="0.00016347"
+        ixy="-1.0521E-05"
+        ixz="2.224E-06"
+        iyy="0.0020532"
+        iyz="-2.4325E-08"
+        izz="0.0021981" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.052 0 0"
+      rpy="-1.5708 -1.5708 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.134"
+      upper="1.396"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.001531 0.027409 0.00019341"
+        rpy="0 0 0" />
+      <mass
+        value="0.85005" />
+      <inertia
+        ixx="0.00065207"
+        ixy="5.3756E-06"
+        ixz="3.4717E-07"
+        iyy="0.00021422"
+        iyz="-2.0836E-07"
+        izz="0.00076327" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.136 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.228"
+      upper="1.221"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="3.3182E-05 -0.0076325 -0.047763"
+        rpy="0 0 0" />
+      <mass
+        value="0.61923" />
+      <inertia
+        ixx="0.00020214"
+        ixy="2.2893E-08"
+        ixz="1.7895E-07"
+        iyy="0.00024768"
+        iyz="-2.9389E-06"
+        izz="0.0001009" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.2055 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.705"
+      upper="2.705"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.0018707 0.0077396 0.00033578"
+        rpy="0 0 0" />
+      <mass
+        value="0.23148" />
+      <inertia
+        ixx="4.8926E-05"
+        ixy="2.3932E-07"
+        ixz="-9.0887E-08"
+        iyy="6.6123E-05"
+        iyz="-3.1892E-08"
+        izz="5.9413E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.577"
+      upper="0.349"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="-7.7114E-05 -4.2313E-05 0.037685"
+        rpy="0 0 0" />
+      <mass
+        value="0.033351" />
+      <inertia
+        ixx="3.2809E-06"
+        ixy="1.4871E-08"
+        ixz="-1.2411E-10"
+        iyy="3.1245E-06"
+        iyz="-1.0678E-10"
+        izz="6.1112E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wlkata_haro380_description/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="100.1"
+      velocity="3.14" />
+  </joint>
+</robot>
